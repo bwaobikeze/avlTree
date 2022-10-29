@@ -8,14 +8,22 @@ public class node {
     int addMatrix[][];
     node(int value){
         this.value=value;
+        this.height=0;
+        this.right=null;
+        this.left=null;
         if (value%3==0){
-            addMatrix=new int[1048576][1048576];
+            addMatrix=new int[1024][1024];
         }
         else if(value%3==1){
-            addMatrix=new int[786432][786432];
+            addMatrix=new int[889][889];
         }
-        else if(value%3==1){
-            addMatrix=new int[393216][393216];
+        else if(value%3==2){
+            addMatrix=new int[627][627];
+        }
+        for(int i=0; i< addMatrix.length; i++){
+            for(int j=0; j< addMatrix.length;j++){
+                addMatrix[i][j]=1;
+            }
         }
     }
 }
