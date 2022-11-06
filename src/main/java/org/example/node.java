@@ -8,9 +8,7 @@ public class node {
     int addMatrix[][];
     node(int value){
         this.value=value;
-        this.height=0;
-        this.right=null;
-        this.left=null;
+        this.height=1;
         if (value%3==0){
             addMatrix=new int[1024][1024];
         }

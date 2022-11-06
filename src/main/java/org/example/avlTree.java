@@ -1,12 +1,27 @@
 package org.example;
 
 public class avlTree {
-    node root;
+    node root=null;
     int findingHeight(node PassedInNode){
         if(PassedInNode==null){
             return 0;
         }
         return PassedInNode.height;
+    }
+    int givehieht(node rootNode){
+        if (rootNode == null)
+            return 0;
+        else {
+            /* compute the depth of each subtree */
+            int lDepth =givehieht(rootNode.left);
+            int rDepth =givehieht(rootNode.right);
+
+            /* use the larger one */
+            if (lDepth > rDepth)
+                return (lDepth + 1);
+            else
+                return (rDepth + 1);
+        }
     }
     int findMax(int firstOption,int secondOption){
         return(firstOption>secondOption) ? firstOption : secondOption;
@@ -22,10 +37,10 @@ public class avlTree {
     }
 
     node rotateLeft(node intialNode){
-        node SelectedNode=intialNode.left;
-        node temp2=intialNode.right;
-        SelectedNode.right=intialNode;
-        intialNode.left=temp2;
+        node SelectedNode=intialNode.right;
+        node temp2=SelectedNode.left;
+        SelectedNode.left=intialNode;
+        intialNode.right=temp2;
         intialNode.height=findMax(findingHeight(intialNode.left),findingHeight(intialNode.right)+1);
         SelectedNode.height=findMax(findingHeight(SelectedNode.left),findingHeight(SelectedNode.right)+1);
         return SelectedNode;
@@ -131,6 +146,15 @@ public class avlTree {
             }
         }
         return root;
+    }
+    void viewPostorderTraverse(node NodeObj){
+        if (NodeObj != null){
+            int numCount=0;
+            System.out.println(numCount+": "+NodeObj.value+" ");
+            numCount++;
+            viewPostorderTraverse(NodeObj.left);
+            viewPostorderTraverse(NodeObj.right);
+        }
     }
 node FindMinVal(node val){
         node current=val;
