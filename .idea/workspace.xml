@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="545dab1f-95fd-4305-8db4-5880646064d8" name="Changes" comment="added delete function">
+    <list default="true" id="545dab1f-95fd-4305-8db4-5880646064d8" name="Changes" comment="Fixed timmings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/avlTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/avlTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/node.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667101023871</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed timmings">
+      <created>1667723087435</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667723087435</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,7 +112,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added insert function" />
     <MESSAGE value="added delete function" />
-    <option name="LAST_COMMIT_MESSAGE" value="added delete function" />
+    <MESSAGE value="Fixed timmings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed timmings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
