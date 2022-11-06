@@ -4,97 +4,82 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-        int numberSize=0;
         Random rand= new Random();
-        avlTree testnode =new avlTree();
-        int randoomVal= rand.nextInt(299-0)+0;
-//       testnode.root= testnode.insertingNewNode(testnode.root,6);
-//        testnode.root= testnode.insertingNewNode(testnode.root,6);
-//        testnode.root=testnode.insertingNewNode(testnode.root,3);
-//        testnode.root=testnode.insertingNewNode(testnode.root,2);
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,8);
-//        testnode.root= testnode.insertingNewNode(testnode.root,30);
-//        testnode.root=testnode.insertingNewNode(testnode.root,50);
-//        testnode.root=testnode.insertingNewNode(testnode.root,220);
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,45);
-//        testnode.root= testnode.insertingNewNode(testnode.root,30);
-//
-//
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,35);
-//        testnode.root= testnode.insertingNewNode(testnode.root,60);
-//        testnode.root=testnode.insertingNewNode(testnode.root,200);
-//        testnode.root=testnode.insertingNewNode(testnode.root,130);
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,49);
-//        testnode.root= testnode.insertingNewNode(testnode.root,290);
-//        testnode.root=testnode.insertingNewNode(testnode.root,280);
-//        testnode.root=testnode.insertingNewNode(testnode.root,220);
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,46);
-//        testnode.root= testnode.insertingNewNode(testnode.root,30);
-//
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,35);
-//        testnode.root= testnode.insertingNewNode(testnode.root,68);
-//        testnode.root=testnode.insertingNewNode(testnode.root,220);
-//        testnode.root=testnode.insertingNewNode(testnode.root,230);
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,49);
-//        testnode.root= testnode.insertingNewNode(testnode.root,10);
-//        testnode.root=testnode.insertingNewNode(testnode.root,90);
-//        testnode.root=testnode.insertingNewNode(testnode.root,2);
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,1);
-//        testnode.root= testnode.insertingNewNode(testnode.root,0);
-//
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,55);
-//        testnode.root= testnode.insertingNewNode(testnode.root,90);
-//        testnode.root=testnode.insertingNewNode(testnode.root,260);
-//        testnode.root=testnode.insertingNewNode(testnode.root,280);
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,3);
-//        testnode.root= testnode.insertingNewNode(testnode.root,15);
-//        testnode.root=testnode.insertingNewNode(testnode.root,4);
-//        testnode.root=testnode.insertingNewNode(testnode.root,9);
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,1);
-//        testnode.root= testnode.insertingNewNode(testnode.root,0);
-//
-//
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,20);
-//        testnode.root= testnode.insertingNewNode(testnode.root,50);
-//        testnode.root=testnode.insertingNewNode(testnode.root,230);
-//        testnode.root=testnode.insertingNewNode(testnode.root,260);
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,69);
-//        testnode.root= testnode.insertingNewNode(testnode.root,13);
-//        testnode.root=testnode.insertingNewNode(testnode.root,9);
-//        testnode.root=testnode.insertingNewNode(testnode.root,10);
-//
-//        testnode.root= testnode.insertingNewNode(testnode.root,111);
-//        testnode.root= testnode.insertingNewNode(testnode.root,12);
+        avlTree testTree =new avlTree();
 
-        //testnode.viewPostorderTraverse(testnode.root);
+//
+//
+//
+//        testTree.root= testTree.insertingNewNode(testTree.root,35);
+//        testTree.root= testTree.insertingNewNode(testTree.root,60);
+//        testTree.root=testTree.insertingNewNode(testTree.root,200);
+//        testTree.root=testTree.insertingNewNode(testTree.root,130);
+//
+//        testTree.root= testTree.insertingNewNode(testTree.root,49);
+//        testTree.root= testTree.insertingNewNode(testTree.root,290);
+//        testTree.root=testTree.insertingNewNode(testTree.root,280);
+//        testTree.root=testTree.insertingNewNode(testTree.root,220);
+//
+//        testTree.root= testTree.insertingNewNode(testTree.root,46);
+//        testTree.root= testTree.insertingNewNode(testTree.root,30);
+//
+//
+//        testTree.root= testTree.insertingNewNode(testTree.root,35);
+//        testTree.root= testTree.insertingNewNode(testTree.root,68);
+//        testTree.root=testTree.insertingNewNode(testTree.root,220);
+//        testTree.root=testTree.insertingNewNode(testTree.root,230);
+//
+//        testTree.root= testTree.insertingNewNode(testTree.root,49);
+//        testTree.root= testTree.insertingNewNode(testTree.root,10);
+//        testTree.root=testTree.insertingNewNode(testTree.root,90);
+//        testTree.root=testTree.insertingNewNode(testTree.root,2);
+//
+//        testTree.root= testTree.insertingNewNode(testTree.root,1);
+//        testTree.root= testTree.insertingNewNode(testTree.root,0);
+//
+//
+//        testTree.root= testTree.insertingNewNode(testTree.root,55);
+//        testTree.root= testTree.insertingNewNode(testTree.root,90);
+//        testTree.root=testTree.insertingNewNode(testTree.root,260);
+//        testTree.root=testTree.insertingNewNode(testTree.root,280);
+//
+//        testTree.root= testTree.insertingNewNode(testTree.root,3);
+//        testTree.root= testTree.insertingNewNode(testTree.root,15);
+//        testTree.root=testTree.insertingNewNode(testTree.root,4);
+//        testTree.root=testTree.insertingNewNode(testTree.root,9);
+//
+//        testTree.root= testTree.insertingNewNode(testTree.root,1);
+//        testTree.root= testTree.insertingNewNode(testTree.root,0);
+//
+//
+//
+//        testTree.root= testTree.insertingNewNode(testTree.root,20);
+//        testTree.root= testTree.insertingNewNode(testTree.root,50);
+//        testTree.root=testTree.insertingNewNode(testTree.root,230);
+//        testTree.root=testTree.insertingNewNode(testTree.root,260);
+//
+//        testTree.root= testTree.insertingNewNode(testTree.root,69);
+//        testTree.root= testTree.insertingNewNode(testTree.root,13);
+//        testTree.root=testTree.insertingNewNode(testTree.root,9);
+//        testTree.root=testTree.insertingNewNode(testTree.root,10);
+//
+//        testTree.root= testTree.insertingNewNode(testTree.root,111);
+//        testTree.root= testTree.insertingNewNode(testTree.root,12);
 
+        //testTree.viewPostorderTraverse(testTree.root);
 
-       testnode.root=testnode.insertingNewNode(testnode.root,randoomVal);
-int i=0;
-      while(i<50){
-          randoomVal=rand.nextInt(299-0)+0;
-          testnode.insertingNewNode(testnode.root,randoomVal);
-          i++;
-      }
+      // long start=System.nanoTime();
+        int NumberOfNums[]={100000/*,200,500,1000,1500,2000,2500,5000,8000,10000*/};
+        for(int i=0; i<NumberOfNums.length;i++){
+            System.out.println("Timings for Insertions and Deletions Large Number: "+NumberOfNums[i]);
+            for(int j=0; j<NumberOfNums[i];j++){
+                int randVar=rand.nextInt(290)+0;
+                testTree.root=testTree.insertNode(testTree.root,randVar);
+            }
+            System.out.println("===========================================");
 
+        }
 
-
-        System.out.println("From Tree list:");
-            testnode.viewPostorderTraverse(testnode.root);
-            System.out.println("height of Avl Tree: "+testnode.givehieht(testnode.root));
 
     }
 
