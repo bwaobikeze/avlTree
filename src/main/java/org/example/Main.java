@@ -9,7 +9,7 @@ public class Main {
 
 
        long start=System.nanoTime();
-        int NumberOfNums[]={100000/*,200,500,1000,1500,2000,2500,5000,8000,10000*/};
+        int NumberOfNums[]={1500/*,200,500,1000,1500,2000,2500,5000,8000,10000*/};
         for(int i=0; i<NumberOfNums.length;i++){
             System.out.println("Timings for Insertions and Deletions Large Number: "+NumberOfNums[i]);
             for(int j=0; j<NumberOfNums[i];j++){
